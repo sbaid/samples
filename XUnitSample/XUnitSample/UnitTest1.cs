@@ -6,7 +6,7 @@ namespace XUnitSample
     public class UnitTest1
     {
         [Fact]
-        public void TestMethod1()
+        public void ThisTestAlwaysFails()
         {
             Assert.False(true);
         }
