@@ -29,7 +29,7 @@ namespace UnitTests
 		public void <#=methodName#>()
 		{
 			//System.Threading.Thread.Sleep(<#= waitTime #>);
-			Assert.AreEqual(1, 1);
+			//Assert.AreEqual(1, 1);
 		}
 <#		
 		count++;
