@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.26730.12
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TestWithBindingRedirect", "TestWithBindingRedirect\TestWithBindingRedirect.csproj", "{EB7792B2-1682-40EA-945A-0A877705E172}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ClassLibrary1", "ClassLibrary1\ClassLibrary1.csproj", "{70B766C1-0E9E-47C6-BA0B-BE246320C6FA}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{EB7792B2-1682-40EA-945A-0A877705E172}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EB7792B2-1682-40EA-945A-0A877705E172}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EB7792B2-1682-40EA-945A-0A877705E172}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EB7792B2-1682-40EA-945A-0A877705E172}.Release|Any CPU.Build.0 = Release|Any CPU
+		{70B766C1-0E9E-47C6-BA0B-BE246320C6FA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{70B766C1-0E9E-47C6-BA0B-BE246320C6FA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{70B766C1-0E9E-47C6-BA0B-BE246320C6FA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{70B766C1-0E9E-47C6-BA0B-BE246320C6FA}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {753151A0-2CF6-44B8-81E7-D8B8F4B2E427}
+	EndGlobalSection
+EndGlobal
