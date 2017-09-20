@@ -1,5 +1,7 @@
 ﻿using System;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
+using System.Collections;
+using System.Collections.Generic;
 
 namespace DataSourceTest_mstestv2
 {
@@ -30,6 +32,34 @@ namespace DataSourceTest_mstestv2
             var value2 = Convert.ToInt32(this.TestContext.DataRow["Value2"]);
             var expectedValue = Convert.ToInt32(this.TestContext.DataRow["ExpectedValue"]);
             Assert.AreEqual(value1 + value2, expectedValue);
+        }
+
+        static IEnumerable<object[]> TestData
+        {
+            get
+            {
+                return new[]
+                {
+                    new object[] { 1, 2, 3 },
+                    new object[] { 4, 5, 9 },
+                };
+            }
+        }
+
+        static IEnumerable<object[]> GetTestData()
+        {
+            return new[]
+                {
+                    new object[] { 11, 12, 23 },
+                    new object[] { 14, 15, 29 },
+                };
+        }
+
+        [TestMethod]
+        [DynamicData("TestData")]
+        public void TestWithDynamicData(int a, int b, int expectedValue)
+        {
+            Assert.AreEqual(a + b, expectedValue);
         }
     }
 }
