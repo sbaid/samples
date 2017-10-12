@@ -14,5 +14,10 @@ namespace NativeTestSample
 			// TODO: Your test code here
 		}
 
+		TEST_METHOD(TestAssertVariants)
+		{
+			Assert::AreEqual((long long)2, (long long)2, L"works!");
+		}
+
 	};
 }
