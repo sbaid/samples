@@ -1,4 +1,5 @@
 using System;
+using System.Threading;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 using Microsoft.VisualStudio.TestTools.UnitTesting.Logging;
 
@@ -16,13 +17,18 @@ namespace MSTestTests
         [TestMethod]
         public void CheckCurrentYear()
         {
-            Assert.IsTrue(HelloWorld.Common.YearUtils.IsCurrentYear(new DateTime(2017, 1, 1)));
+            var day = new DateTime(DateTime.Now.Year, 1, 1);
+            // Thread.Sleep(100 * 1000);
+            Assert.IsTrue(HelloWorld.Common.YearUtils.IsCurrentYear(day));
         }
 
         [TestMethod]
         public void CheckLastYear()
         {
-            Assert.IsFalse(HelloWorld.Common.YearUtils.IsCurrentYear(new DateTime(2015, 1, 1)));
+            int day = 1;
+            var dayLastYear = new DateTime(DateTime.Now.Year - 1, 1, day);
+            // Thread.Sleep(100 * 1000);
+            Assert.IsTrue(HelloWorld.Common.YearUtils.IsLastYear(dayLastYear));
         }
 
         [TestMethod]

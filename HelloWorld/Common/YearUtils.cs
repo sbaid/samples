@@ -10,10 +10,14 @@ namespace HelloWorld.Common
     {
         public static bool IsCurrentYear(DateTime date)
         {
-            if (date.Year == DateTime.Now.Year)
-                return true;
-            else
-                return false;
+            bool ret = (date.Year == DateTime.Now.Year);
+            return ret;
+        }
+
+        public static bool IsLastYear(DateTime date)
+        {
+            bool ret = (date.Year == (DateTime.Now.Year - 1));
+            return ret;
         }
     }
 }
